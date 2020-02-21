@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:background="@color/colorPrimary">
+        <Button
+                android:id="@+id/closeBtn"
+                android:layout_columnWeight="1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="@string/close"
+                android:background="@android:color/transparent"/>
+
+        <Button
+                android:id="@+id/completeBtn"
+                android:layout_columnWeight="1"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:text="@string/select"
+                android:background="@android:color/transparent"/>
+    </GridLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/pickerGallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
